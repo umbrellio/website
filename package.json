@@ -16,7 +16,5 @@
     "rimraf": "^2.6.3",
     "sass": "^1.22.7"
   },
-  "dependencies": {
-    "jquery": "^3.4.1"
-  }
+  "dependencies": {}
 }
