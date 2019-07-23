@@ -1,0 +1,126 @@
+doctype html
+html lang="ru"
+  head
+    meta charset="utf-8"
+    title Umbrellio &bull; Проекты
+    include head
+
+  body
+    nav: .inner: .row
+      - $url = "projects"
+      include nav
+
+    section.intro: .inner: .row
+      .col-12.text-center
+        h3.intro-text
+          strong>
+            span &mdash;
+            | Umbrellio
+            span &mdash;
+          br
+          | эффективность, отточенная временем
+
+
+    section: .inner: .row: .col-12
+      .activity-group
+        .activity
+          h3: span BI-решения
+          .activity-icon
+            img src="images/icons/icon-a.png"
+          .activity-description
+            p Мы&nbsp;занимаемся разработкой собственного BI-решения для эффективного анализа деятельности и&nbsp;информирования о&nbsp;состоянии дел компании.
+            ul.bullet
+              li Агрегация и&nbsp;размещение информации в&nbsp;едином хранилище данных.
+              li Разработка отчетов на&nbsp;базе когоротного анализа.
+              li Разработка аналитических дашбордов (интерактивных отчётов).
+
+        .activity
+          h3: span Платежные шлюзы
+          .activity-icon
+            img src="images/icons/icon-b.png"
+          .activity-description
+            | Наши партнеры принимают оплату услуг от&nbsp;клиентов через различные платежные системы.
+            br
+            | Мы решаем следующие задачи:
+            ul.bullet
+              li Разработка интерфейсов для&nbsp;удобства клиентов;
+              li Осуществление взаимодействия поставщиков услуг оплаты c&nbsp;сторонними АРI;
+              li Создание собственных anti-fraud решений.
+
+        .activity
+          h3: span CRM системы
+          .activity-icon
+            img src="images/icons/icon-c.png"
+          .activity-description
+            p Ни один бизнес не&nbsp;может обойтись без CRM-системы. Мы развиваем внутреннюю систему, которая позволяет:
+            ul.bullet
+              li Хранить базу наших клиентов с&nbsp;историей взаимодействий;
+              li Интегрироваться в&nbsp;другие системы компании;
+              li Взаимодействовать с&nbsp;клиентом через онлайн-чат, почту или мессенджеры в&nbsp;едином окне;
+              li Вести систему KPI для оценки работы менеджеров.
+
+
+        .activity
+          h3: span Маркетинговые инструменты
+          .activity-icon
+            img src="images/icons/icon-d.png"
+          .activity-description
+            p Партнерам Umbrellio нужны современные и&nbsp;эффективные маркетинговые инструменты. Система позволяет настраивать гибкие условия отправки и&nbsp;реагировать на&nbsp;различные события от&nbsp;пользователя. По каждому каналу мы имеем развернутую аналитику. Мы строим работу с&nbsp;клиентами при помощи:
+            ul.bullet
+              li Мессенджеров и социальных сетей;
+              li Почтовых и СМС-рассылок;
+              li Автопрозвонов.
+
+
+
+
+      h3 Наши проекты на Github
+      br
+      .projects
+        a.project href="https://github.com/umbrellio/polist" target="_blank"
+          img src="images/logo@200.png"
+          .project-data
+            h3 polist
+            p Ruby gem for creating simple service classes.
+        a.project href="https://github.com/umbrellio/rollex" target="_blank"
+          img src="images/logo@200.png"
+          .project-data
+            h3 rollex
+            p Timeless luxury counters
+        a.project href="https://github.com/umbrellio/lamian" target="_blank"
+          img src="images/logo@200.png"
+          .project-data
+            h3 lamian
+            p Attaches logs to exception reports
+        a.project href="https://github.com/umbrellio/self_data" target="_blank"
+          img src="images/logo@200.png"
+          .project-data
+            h3 self_data
+            p It's like DATA but better
+        a.project href="https://github.com/umbrellio/sequel-tablefunc" target="_blank"
+          img src="images/logo@200.png"
+          .project-data
+            h3 sequel-tablefunc
+            p Sequel extension for crosstabs
+        a.project href="https://github.com/umbrellio/threaded_logging" target="_blank"
+          img src="images/logo@200.png"
+          .project-data
+            h3 threaded_logging
+            p Better formatter for Ruby loggers.
+        a.project href="https://github.com/umbrellio/sequel_pretty_print" target="_blank"
+          img src="images/logo@200.png"
+          .project-data
+            h3 sequel_pretty_print
+            p PrettyPrint support for Sequel models.
+        a.project href="https://github.com/umbrellio/ezclient" target="_blank"
+          img src="images/logo@200.png"
+          .project-data
+            h3 ezclient
+            p An HTTP gem wrapper for easy persistent connections and more.
+        a.project href="https://github.com/umbrellio/code-style" target="_blank"
+          img src="images/logo@200.png"
+          .project-data
+            h3 code-style
+            p Linter settings for our projects
+
+    include footer

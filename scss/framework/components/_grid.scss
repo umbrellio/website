@@ -1,0 +1,75 @@
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 $gutter;
+  margin: 0 auto;
+  section & {
+    max-width: 1160px;
+  }
+}
+
+@mixin column($columns) {
+  position: relative;
+  float: left;
+  width: percentage($columns / $grid-columns);
+  min-height: 1px;
+  padding: ($gutter / 2);
+  //box-shadow: inset 15px 0 0 0 rgba(255, 255, 255, .05);
+}
+
+%row,
+.row {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+@for $i from 1 through $grid-columns {
+  .col-#{$i},
+  %col-#{$i} {
+    @include column($i);
+  }
+}
+
+$prevPoint: 20000;
+
+@each $break, $point in $breakpoints {
+  .#{$break}-more,
+  .#{$break}-less,
+  .#{$break}-only {
+    display: none;
+  }
+  @include between($point, $prevPoint - 1px) {
+    .#{$break}-only {
+      display: block;
+    }
+  }
+  @include min($point) {
+    .#{$break}-more {
+      display: block;
+    }
+  }
+  @include max($point - 1px) {
+    .#{$break}-less {
+      display: block;
+    }
+    .#{$break}-hide {
+      display: none;
+    }
+    @for $i from 1 through $grid-columns {
+      .col-#{$break}-#{$i},
+      %col-#{$break}-#{$i} {
+        @include column($i);
+      }
+    }
+  }
+  $prevPoint: $point;
+}
+
+.frow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

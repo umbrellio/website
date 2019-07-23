@@ -1,0 +1,93 @@
+doctype html
+html lang="ru"
+  head
+    meta charset="utf-8"
+    title Umbrellio
+    include head
+
+  body
+    nav: .inner: .row
+      - $url = "main"
+      include nav
+
+    section.intro: .inner: .row
+      .col-12.text-center
+        h3.intro-text
+          strong>
+            span &mdash;
+            | Umbrellio
+            span &mdash;
+          br
+          | уникальные разработки и&nbsp;смелые идеи, воплощенные в&nbsp;реальность
+
+
+    section: .inner: .row
+      .col-12
+        .activities
+          .text-center
+            .activity-icon: img src="images/icons/icon-a.png" alt="BI-решения"
+            h3: span BI-решения
+            p Мы разрабатываем BI-решения для эффективного анализа деятельности компаний.
+          .text-center
+            .activity-icon: img src="images/icons/icon-b.png" alt="Платежные шлюзы"
+            h3: span Платежные шлюзы
+            p Наши партнеры принимают оплату услуг через различные платежные системы от&nbsp;клиентов по&nbsp;всему миру.
+          .text-center
+            .activity-icon: img src="images/icons/icon-c.png" alt="CRM системы"
+            h3: span CRM системы
+            p Мы разрабатываем и&nbsp;поддерживаем собственную высокоорганизованную CRM-систему.
+          .text-center
+            .activity-icon: img src="images/icons/icon-d.png" alt="Маркетинговые инструменты"
+            h3: span Маркетинговые<br /> инструменты
+            p Мы создаем современные и&nbsp;эффективные маркетинговые решения.
+
+        .textbox
+          p Благодаря нашим уникальным разработкам и&nbsp;идеям, мы&nbsp;быстро интегрируем бизнес-процессы для успешной деятельности компаний клиентов. Наши порталы пользуются популярностью и&nbsp;известны в&nbsp;большинстве стран. Используя собственные продукты для обработки больших объемов данных, мы&nbsp;успешно автоматизируем внутренние процессы.
+          p Мы видим преимущество в&nbsp;скорости и&nbsp;точности. В&nbsp;наших продуктах заложена система алгоритмов, которая ускоряет обработку данных и&nbsp;вывода этой информации в&nbsp;удобном для пользователя виде. Это позволяет нашим CRM-системам, маркетинговым и&nbsp;BI-инструментам стать неотъемлемой частью бизнес-процессов.
+          p Платежные шлюзы, благодаря специальной системе кодирования данных, дают возможность быстро и&nbsp;безопасно совершать транзакции со&nbsp;всеми известными валютами. Наши разработки прошли испытание временем и&nbsp;высокими нагрузками и&nbsp;всегда приносят клиентам прибыль. Продукты Umbrellio отличаются ярким и&nbsp;понятным интерфейсом, стабильной работой и&nbsp;высоким качеством.
+
+        .technologies
+          div
+            img src="images/logos/ruby.png" alt=""
+            .hint: span ruby
+          div
+            img src="images/logos/rails.png" alt=""
+            .hint: span ruby on rails
+          div
+            img src="images/logos/php.png" alt=""
+            .hint: span php
+          div
+            img src="images/logos/postgresql.png" alt=""
+            .hint: span postgresql
+          div
+            img src="images/logos/js.png" alt=""
+            .hint: span javascript
+          div
+            img src="images/logos/babel.png" alt=""
+            .hint: span babel
+          div
+            img src="images/logos/vue.png" alt=""
+            .hint: span vue
+          div
+            img src="images/logos/react.png" alt=""
+            .hint: span react
+          div
+            img src="images/logos/redux.png" alt=""
+            .hint: span redux
+          div
+            img src="images/logos/redis.png" alt=""
+            .hint: span redis
+          div
+            img src="images/logos/rabbit.png" alt=""
+            .hint: span rabbitmq
+          div
+            img src="images/logos/webpack.png" alt=""
+            .hint: span webpack
+          div
+            img src="images/logos/html5.png" alt=""
+            .hint: span html5
+          div
+            img src="images/logos/css3.png" alt=""
+            .hint: span css3
+
+    include footer

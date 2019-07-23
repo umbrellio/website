@@ -1,0 +1,45 @@
+$primary: #ffa800;
+$primary-action: #41d8c7;
+
+$secondary: #4ab3a7;
+$secondary-action: #ffcc00;
+
+$success: #ff7200;
+$alert: #858585;
+$warning: #fff;
+
+$gradient-primary: '90deg, #0f5160 0%, #0e4254 100%';
+$gradient-primary-inverted: '90deg, #0e4254 0%, #0f5160 100%';
+
+$colors: (
+  ('primary', $primary),
+  ('secondary', $secondary),
+  ('success', $success),
+  ('alert', $alert),
+  ('warning', $warning),
+);
+
+
+$gutter: 30px;
+$grid-columns: 12;
+
+$xxs: 320px;
+$xs: 640px - 20px;
+$sm: 960px - 20px;
+$md: 1280px - 40px;
+$lg: 1350px + 10px + 40px;
+
+$breakpoints: (
+  ('lg', $lg),
+  ('md', $md),
+  ('sm', $sm),
+  ('xs', $xs),
+  ('xxs', $xxs),
+);
+
+
+
+$break-2: (260 + $gutter) * 2 + 20px; // 560
+$break-3: (260 + $gutter) * 3 + 20px; // 830
+$break-4: (260 + $gutter) * 4 + 20px; // 1100
+$break-5: (260 + $gutter) * 5 + 20px; // 1370

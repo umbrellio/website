@@ -1,0 +1,38 @@
+
+footer class=( if $map == 'large' then 'fixed-bottom' end )
+  .social
+    a href="https://github.com/umbrellio" target="_blank": span.fa.fa-github
+    / a href="https://www.facebook.com/groups/219788308760953" target="_blank": span.fa.fa-facebook
+    / a href="https://vk.com/club162311462" target="_blank": span.fa.fa-vk
+    a href="https://www.instagram.com/umbrellio_biz" target="_blank": span.fa.fa-instagram
+  .inner: .row
+    .col-6
+      p.phone: a href="tel:+78126485327" 8 (812) 648-53-27
+      p.email
+        a href="mailto:info@umbrellio.biz" info@umbrellio.biz
+        br
+        a href="mailto:hr@umbrellio.biz" hr@umbrellio.biz
+    .col-6
+      div(itemscope itemtype="http://schema.org/Organization")
+        span(itemprop="name") OOO «Амбреллио»
+        div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
+          span(itemprop="postalCode") 197227
+          | ,
+          span<(itemprop="addressLocality") г. Санкт-Петербург
+          | ,
+          span<(itemprop="streetAddress") ул. Гаккелевская, 21
+        span.schema-fade(itemprop="telephone") +7 812 648-53-27
+        span.schema-fade(itemprop="email") info@umbrellio.biz
+
+      p Все права защищены
+
+      p.contacts
+        | ОКПО 27480181 &bull; ОГРН 1157847338770 &bull; ИНН&nbsp;7814286143 &bull; КПП 781401001
+
+
+#map class=( if $map == 'large' then 'map-fit' end )
+
+
+script src="js/jquery.js"
+script src="js/script.js"
+script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFOnAT8wBmk7GfXdBNBA_OCr-bGx-sx94&amp;v=3.exp&amp;amp;sensor=false"

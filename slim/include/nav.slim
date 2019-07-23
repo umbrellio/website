@@ -1,0 +1,23 @@
+.col-12
+  - if $url != 'main'
+    a.logo href="/"
+      img src="images/logo.svg" alt="Umbrellio"
+  - else
+    .logo
+      img src="images/logo.svg" alt="Umbrellio"
+  .social
+    a href="https://github.com/umbrellio" target="_blank": span.fa.fa-github
+    / a href="https://www.facebook.com/groups/219788308760953" target="_blank": span.fa.fa-facebook
+    / a href="https://vk.com/club162311462" target="_blank": span.fa.fa-vk
+    a href="https://www.instagram.com/umbrellio_biz" target="_blank": span.fa.fa-instagram
+  ul.menu-main
+    li class=( if $url == 'main' then 'active' end )
+      a href="/" Главная
+    li class=( if $url == 'projects' then 'active' end )
+      a href="/projects" Проекты
+    li class=( if $url == 'about' then 'active' end )
+      a href="/about" О компании
+    li class=( if $url == 'career' then 'active' end )
+      a href="/career" Карьера
+    li class=( if $url == 'contacts' then 'active' end )
+      a href="/contacts" Контакты
