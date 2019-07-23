@@ -1,0 +1,23 @@
+.col-12
+  if url != 'main'
+    a.logo(href="/")
+      img(src="../images/logo.svg" alt="Umbrellio")
+  else
+    .logo
+      img(src="../images/logo.svg" alt="Umbrellio")
+  .social
+    a(href="https://github.com/umbrellio" target="_blank")
+      span.fa.fa-github
+    a(href="https://www.instagram.com/umbrellio_biz" target="_blank")
+      span.fa.fa-instagram
+  ul.menu-main
+    li(class=(url == 'main' ? 'active' : '' ))
+      a(href="/") Главная
+    li(class=(url == 'projects' ? 'active' : '' ))
+      a(href="/projects") Проекты
+    li(class=(url == 'about' ? 'active' : '' ))
+      a(href="/about") О компании
+    li(class=(url == 'career' ? 'active' : '' ))
+      a(href="/career") Карьера
+    li(class=(url == 'contacts' ? 'active' : '' ))
+      a(href="/contacts") Контакты

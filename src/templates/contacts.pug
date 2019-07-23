@@ -1,0 +1,14 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="utf-8")
+    title Umbrellio &bull; Контакты
+    include include/head
+
+  body.has-map
+    nav: .inner: .row
+      - var url = "contacts"
+      include include/nav
+
+    - var map = "large"
+    include include/footer

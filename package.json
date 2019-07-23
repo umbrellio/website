@@ -1,19 +1,22 @@
 {
-  "name": "binary",
-  "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "name": "umbrellio-website",
+  "private": true,
+  "version": "UNVERSIONED",
+  "license": "UNLICENSED",
   "scripts": {
-    "start": "gulp watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prebuild": "rimraf dist",
+    "build": "parcel build src/templates/*.pug",
+    "start": "nodemon --watch src --ext js,scss,pug --exec bin/serve"
   },
-  "author": "",
-  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "nodemon": "^1.19.1",
+    "parcel-bundler": "^1.12.3",
+    "pug": "^2.0.4",
+    "rimraf": "^2.6.3",
+    "sass": "^1.22.7"
+  },
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-cssbeautify": "^0.1.3",
-    "gulp-livereload": "^3.8.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-slim": "^0.3.0"
+    "jquery": "^3.4.1"
   }
 }

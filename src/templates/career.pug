@@ -1,19 +1,20 @@
 doctype html
-html lang="ru"
+html(lang="ru")
   head
-    meta charset="utf-8"
+    meta(charset="utf-8")
     title Umbrellio &bull; Карьера
-    include head
+    include include/head
 
   body
     nav: .inner: .row
-      - $url = "career"
-      include nav
+      - var url = "career"
+      include include/nav
 
     section.intro: .inner: .row
       .col-12.text-center
         h3.intro-text
-          strong>
+          strong
+            | &nbsp;
             span &mdash;
             | Umbrellio
             span &mdash;
@@ -45,21 +46,6 @@ html lang="ru"
           | Наши открытые
           a href="https://spb.hh.ru/employer/2058497" вакансии
           | на hh.ru
-      / .col-4.col-sm-12.vacancy
-      /   h3
-      /     span DevOps engineer
-      /     small от 90 000 руб.
-      /   p Нам требуется сильный специалист для сопровождения инфраструктуры, конфигурирования и&nbsp;обеспечения отказоустойчивости серверов.
-      /
-      /   a href="https://hh.ru/vacancy/24883296" target="_blank" Смотреть вакансию на hh.ru
-      /
-      / .col-4.col-sm-12.vacancy
-      /   .frow
-      /     h3
-      /       span Ruby-разработчик‎ (middle/senior)
-      /       small от 110 000 руб.
-      /   p Мы быстро развиваем наши проекты и&nbsp;сейчас ищем классного Ruby-разработчика.
-      /   a href="https://hh.ru/vacancy/23926813" target="_blank" Смотреть вакансию на hh.ru
 
       .col-12
         h3 Работа у нас
@@ -74,4 +60,4 @@ html lang="ru"
           li Мы развиваем и обучаем наших сотрудников и даем возможность посещения курсов и конференций.
           li Мы любим отдыхать, поэтому регулярно организовываем корпоративы и тимбилдинги.
 
-    include footer
+    include include/footer
