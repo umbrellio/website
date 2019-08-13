@@ -1,0 +1,161 @@
+nav:
+  home: Home
+  about: About Us
+  careers: Careers
+  contacts: Contact Us
+footer:
+  organization_name: OOO Umbrellio
+  organization_address: 21 Gakkelevskaya Ulitsa, Saint-Petersburg, 197227, Russia
+  copyright_notice: All rights reserved
+  requisites: OKPO 27480181 • OGRN 1157847338770 • INN 7814286143 • KPP 781401001
+pages:
+  home:
+    slogan: Unique designs and brave ideas embodied into reality
+    activities:
+      bi-solutions:
+        title: BI solutions
+        description: We develop BI solutions for effective analysis of company performance.
+      payment_gateways:
+        title: Payment gateways
+        description: |
+          Our partners accept payments via various payment systems from clients all over the world.
+      crm_systems:
+        title: CRM systems
+        description: We develop and support our highly-organised CRM system.
+      marketing_tools:
+        title: Marketing tools
+        description: We develop modern and effective marketing solutions.
+    what_we_do:
+      - |
+        Thanks to our unique engineering solutions and ideas, we quickly integrate business
+        processes to enable our clients' success. Our portals are popular and known in the majority
+        of countries. We use our products to process big data, which lets us automate internal
+        processes efficiently.
+      - |
+        We see advantages in speed and precision. Our products use a system of algorithms that
+        speeds up data analysis and helps to present the information neatly.
+        This allows our CRM systems, marketing and BI solutions to become an integral part of
+        business processes.
+      - |
+        Our data encoding system enables payment gateways to quickly and safely process transactions
+        with all existing currencies. Our customers benefit from our solutions which have stood the
+        test of time and high load. Umbrellio's products exhibit clean, ergonomic interfaces,
+        stability, and high quality.
+  projects:
+    slogan: Efficiency, honed by time
+    commercial_projects:
+      bi-solutions:
+        title: BI solutions
+        description:
+          main:
+            - |
+              Our BI solutions are very efficient at business analysis and building reports, and we
+              are always improving them.
+          bullet_points:
+            - Aggregation and storage of data in a single data lake;
+            - Building reports based on cohort analysis;
+            - Development of interactive dashboards.
+      payment_gateways:
+        title: Payment gateways
+        description:
+          main:
+            - Our partners accept payments via various payment systems.
+            - "Here are some of the problems we solve:"
+          bullet_points:
+            - Development of ergonomic interfaces;
+            - Establishing communications between payment services with third-party APIs;
+            - Development of anti-fraud solutions.
+      crm-systems:
+        title: CRM systems
+        description:
+          main:
+            - "No business can function without a CRM. Our internal system enables us to:"
+          bullet_points:
+            - Store a database of our clients with communication history;
+            - Interact with all of our systems;
+            - Communicate with clients via support chat, email or messaging apps in one window;
+            - Evaluate manager performance using a KPI system.
+      marketing_tools:
+        title: Marketing tools
+        description:
+          main:
+            - |
+              "Umbrellio's partners need modern and efficient marketing tools. Our system enables us
+              to have full control over highly flexible rules on client notifications. We have
+              extensive analytics for every communication channel. We communicate with clients via:"
+          bullet_points:
+            - Messaging apps and social networks;
+            - Email and SMS distributions;
+            - Automatic phone calls.
+    open_source:
+      title: Our projects on GitHub
+  about:
+    slogan: Innovations that age
+    organization:
+      title: About us
+      description:
+        - |
+          Umbrellio develops financial analysis systems, CRM systems, payment gateways and
+          marketing tools.
+        - |
+          In 8 years of productive work, we've collected a lot of expertise. Umbrellio is the
+          strategic centre of development that supervises different affiliates.
+        - |
+          During development, we practice code review, automated testing and static code analysis,
+          which enables us to guarantee high code quality and makes it easier to support our
+          products.
+        - |
+          We work enthusiastically and masterfully. Design and development are skills that we
+          always strive to perfect.
+    team:
+      title: Our team
+      description:
+        - |
+          At Umbrellio, we hire thoroughly. Skilled developers, QA engineers and system
+          administrators are the crucial part of the company. Every one of us is contributing to the
+          quality of our products and is proud of their code and ideas.
+        - |
+          Our engineers constantly perfect their skills, learn new technologies and help each other
+          to improve.
+        - |
+          We don't just use the most advanced technologies; we want to create them. Our engineers
+          speak at conferences and organise meetups.
+  careers:
+    slogan: A space for creative work
+    careers:
+      title: Careers
+      body:
+        -
+          - Knowledge and skills of our engineers are the key resources of Umbrellio.
+          - |
+            Every one of us cannot bear stagnation and strives always to improve, both personally
+            and professionally.
+          - |
+            Comfortable work conditions, absence of bureaucracy, friendly atmosphere and loyalty
+            enable us to be as efficient as possible and enjoy our work.
+        -
+          - Our engineers take personal responsibility for their work.
+          - |
+            Our engineers can manage their time on their own, aspire to bring excellent results
+            and are ready to solve serious problems.
+        -
+          - |
+            We provide our engineers with opportunities to apply their skills and knowledge to
+            realise their potential.
+          - We always provide our engineers with exciting tasks that fit their abilities.
+    openings:
+      text: See available %link% on hh.ru
+      openings: openings
+    working_with_us:
+      title: Working with us
+      bullets:
+        - Our projects are evolving, and we always welcome talented professionals.
+        - As the company grows, our engineers are improving their hard and soft skills.
+        - We offer a competitive salary, various perks and complete stability.
+        - Flexible working hours.
+        - Comfortable workplaces in a modern office.
+        - We care about the health of our employees. We provide compensation for club memberships.
+        - |
+          We help our employees to learn and improve and encourage them to participate in
+          conferences.
+        - We love to relax. Parties and team building events are regular activities for us.
