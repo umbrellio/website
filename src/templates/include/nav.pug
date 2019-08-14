@@ -1,3 +1,5 @@
+- var _t = scopedT('nav')
+
 .col-12
   if url != 'main'
     a.logo(href="/")
@@ -12,12 +14,12 @@
       span.fa.fa-instagram
   ul.menu-main
     li(class=(url == 'main' ? 'active' : '' ))
-      a(href="/") Главная
+      a(href=`/${lang}`) #{_t('home')}
     li(class=(url == 'projects' ? 'active' : '' ))
-      a(href="/projects") Проекты
+      a(href=`/${lang}/projects`) #{_t('projects')}
     li(class=(url == 'about' ? 'active' : '' ))
-      a(href="/about") О компании
+      a(href=`/${lang}/about`) #{_t('about')}
     li(class=(url == 'career' ? 'active' : '' ))
-      a(href="/career") Карьера
+      a(href=`/${lang}/career`) #{_t('careers')}
     li(class=(url == 'contacts' ? 'active' : '' ))
-      a(href="/contacts") Контакты
+      a(href=`/${lang}/contacts`) #{_t('contacts')}

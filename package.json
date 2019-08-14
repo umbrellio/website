@@ -5,11 +5,12 @@
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "parcel build src/templates/*.pug",
-    "start": "nodemon --watch src --ext js,scss,pug --exec bin/serve"
+    "build": "bin/build",
+    "start": "nodemon --watch src --ext js,scss,pug,yml --exec bin/serve"
   },
   "devDependencies": {
     "http-server": "^0.11.1",
+    "js-yaml": "^3.13.1",
     "nodemon": "^1.19.1",
     "parcel-bundler": "^1.12.3",
     "pug": "^2.0.4",

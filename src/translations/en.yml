@@ -1,6 +1,7 @@
 nav:
   home: Home
-  about: About Us
+  projects: Projects
+  about: About us
   careers: Careers
   contacts: Contact Us
 footer:
@@ -18,10 +19,10 @@ pages:
       payment_gateways:
         title: Payment gateways
         description: |
-          Our partners accept payments via various payment systems from clients all over the world.
-      crm_systems:
+          Our partners accept payments<br />via various payment systems<br />from clients all over the world.
+      crm-systems:
         title: CRM systems
-        description: We develop and support our highly-organised CRM system.
+        description: We develop and support our<br />highly-organised CRM system.
       marketing_tools:
         title: Marketing tools
         description: We develop modern and effective marketing solutions.
