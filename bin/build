@@ -1,0 +1,65 @@
+#!/usr/bin/env node
+
+const fs = require('fs')
+const path = require('path')
+const ParcelBundler = require('parcel-bundler')
+
+const LANGUAGES = ['en', 'ru']
+const TEMPLATE_PATH = path.join(__dirname, '..', 'src', 'templates')
+const DIST_PATH = path.join(__dirname, '..', 'dist')
+const LANG_FILE_PATH = path.join(__dirname, '..', '.lang')
+
+fs.mkdirSync(DIST_PATH)
+
+const entryFiles = path.join(TEMPLATE_PATH, '*.pug')
+
+const bundlers = LANGUAGES.map(lang => {
+  const parcelOptions = {
+    outDir: path.join(DIST_PATH, lang),
+    cache: false,
+    watch: false,
+    logLevel: 1,
+  }
+
+  const bundler = new ParcelBundler(entryFiles, parcelOptions)
+  // HACK 0: passing language as an argument even though Parcel doesn't have an API for it
+  bundler.__xxx_umbr_hack_lang_xxx__ = lang
+
+  return bundler
+})
+
+// `/abc` should redirect to `/en/abc`
+bundlers.push(
+  new ParcelBundler(path.join(TEMPLATE_PATH, 'logical', 'redirect.pug'), {
+    outDir: DIST_PATH,
+    outFile: 'index.html',
+    cache: false,
+    watch: false,
+    logLevel: 1,
+  })
+)
+;(async function() {
+  // Parcel bundlers must run sequentially
+  await bundlers.reduce(
+    (promise, bundler) =>
+      promise.then(() => {
+        // HACK 0
+        if (bundler.__xxx_umbr_hack_lang_xxx__ !== undefined) {
+          fs.writeFileSync(LANG_FILE_PATH, bundler.__xxx_umbr_hack_lang_xxx__)
+        }
+        return bundler
+          .bundle()
+          .then(() => fs.existsSync(LANG_FILE_PATH) && fs.unlinkSync(LANG_FILE_PATH))
+      }),
+    Promise.resolve()
+  )
+
+  // NOTE: assets are being compiled multiple times (once for each language), this isn't very good
+  console.log('Cleaning up assets...')
+
+  const assets = fs.readdirSync(path.join(DIST_PATH, 'en')).filter(f => !f.endsWith('.html'))
+  assets.forEach(asset => {
+    fs.copyFileSync(path.join(DIST_PATH, 'en', asset), path.join(DIST_PATH, asset))
+    LANGUAGES.forEach(lang => fs.unlinkSync(path.join(DIST_PATH, lang, asset)))
+  })
+})()

@@ -1,3 +1,5 @@
+- var _t = scopedT('footer')
+
 footer(class=(map == 'large' ? 'fixed-bottom' : ''))
   .social
     a(href="https://github.com/umbrellio" target="_blank")
@@ -12,20 +14,15 @@ footer(class=(map == 'large' ? 'fixed-bottom' : ''))
         a(href="mailto:hr@umbrellio.biz") hr@umbrellio.biz
     .col-6
       div(itemscope itemtype="http://schema.org/Organization")
-        span(itemprop="name") OOO «Амбреллио»
+        span(itemprop="name") #{_t('organization_name')}
         div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
-          span(itemprop="postalCode") 197227
-          | , &nbsp;
-          span(itemprop="addressLocality") г. Санкт-Петербург
-          | , &nbsp;
-          span(itemprop="streetAddress") ул. Гаккелевская, 21
+          | #{_t('organization_address')}
         span.schema-fade(itemprop="telephone") +7 812 648-53-27
         span.schema-fade(itemprop="email") info@umbrellio.biz
 
-      p Все права защищены
+      p #{_t('copyright_notice')}
 
-      p.contacts
-        | ОКПО 27480181 &bull; ОГРН 1157847338770 &bull; ИНН&nbsp;7814286143 &bull; КПП 781401001
+      p.contacts #{_t('requisites')}
 
 
 #map(class=(map == 'large' ? 'map-fit' : ''))
