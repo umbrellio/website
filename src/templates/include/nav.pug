@@ -7,6 +7,15 @@
   else
     .logo
       img(src="../images/logo.svg" alt="Umbrellio")
+  .lang-container
+    ul.lang
+      - link = (url == 'main' ? '' : url)
+      li(class=(lang == 'en' ? 'active' : '' ))
+        a(href=`/en/${link}`)
+          img(src="../images/flags/en.svg" alt="")
+      li(class=(lang == 'ru' ? 'active' : '' ))
+        a(href=`/ru/${link}`)
+          img(src="../images/flags/ru.svg" alt="")
   .social
     a(href="https://github.com/umbrellio" target="_blank")
       span.fa.fa-github
