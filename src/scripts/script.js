@@ -5,8 +5,11 @@ window.addEventListener('scroll', scroll)
 scroll()
 
 function scroll() {
+  const intro = document.querySelector('.intro')
+  if (intro === null) return
+
   const _top = document.documentElement.scrollTop
-  document.querySelector('.intro').style.backgroundPosition = '50% ' + _top * 0.6 + 'px'
+  intro.style.backgroundPosition = '50% ' + _top * 0.6 + 'px'
 }
 
 const coords = '60.000132, 30.256602'
