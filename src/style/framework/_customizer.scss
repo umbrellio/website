@@ -19,7 +19,6 @@ $colors: (
   ('warning', $warning),
 );
 
-
 $gutter: 30px;
 $grid-columns: 12;
 
@@ -36,8 +35,6 @@ $breakpoints: (
   ('xs', $xs),
   ('xxs', $xxs),
 );
-
-
 
 $break-2: (260 + $gutter) * 2 + 20px; // 560
 $break-3: (260 + $gutter) * 3 + 20px; // 830

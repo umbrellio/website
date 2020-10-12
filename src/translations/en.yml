@@ -9,6 +9,7 @@ footer:
   organization_address: 21 Gakkelevskaya Ulitsa, Saint-Petersburg, 197227, Russia
   copyright_notice: All rights reserved
   requisites: OKPO 27480181 • OGRN 1157847338770 • INN 7814286143 • KPP 781401001
+  working_conditions: Working conditions (ru)
 pages:
   home:
     slogan: Unique designs and brave ideas embodied into reality
@@ -160,3 +161,10 @@ pages:
           We help our employees to learn and improve and encourage them to participate in
           conferences.
         - We love to relax. Parties and team building events are regular activities for us.
+  safety:
+    slogan: Safety first
+    title: Результаты специальной оценки условий труда
+    info:
+      - Во исполнение требований Федерального закона Российской Федерации № 426 – ФЗ «О специальной оценке условий труда» в период с ноября 2019 по февраль 2020 года в Обществе с ограниченной ответственностью «Амбреллио» была проведена специальная оценка условий труда на рабочих местах.
+      - Для проведения специальной оценки условий труда по договору привлекалось Общество с ограниченной ответственностью «ЦЕНТР ОХРАНЫ ТРУДА И ЭКОЛОГИИ «ЭКСПЕРТЭГИДА», имеющее аттестат аккредитации №RA.RU.21ЭГ03, выданный 03 ноября 2015 г., Регистрационный номер в реестре организаций, проводящих специальную оценку условий труда – №181 от 25.12.2015г.)
+      - "Результаты специальной оценки представлены ниже:"
