@@ -1,0 +1,42 @@
+doctype html
+html(lang=lang)
+  head
+    meta(charset="utf-8")
+    title Umbrellio &bull; #{t('nav.about')}
+    include include/head
+
+  body
+    nav: .inner: .row
+      - var url = "safety"
+      include include/nav
+
+    section.intro: .inner: .row
+      .col-12.text-center
+        h3.intro-text
+          strong
+            | &nbsp;
+            span &mdash;
+            | Umbrellio
+            span &mdash;
+          br
+          | !{t('pages.safety.slogan')}
+
+
+    section: .inner
+      .row
+        .col-12
+          h2 #{t('pages.safety.title')}
+          each paragraph in t('pages.safety.info')
+            p!= paragraph
+
+          p
+            a.safety(href="improvements.pdf" target="_blank")
+              img.icon_svg(src="../images/icons/pdf.svg" alt="")
+              | Перечень рекомендуемых мероприятий по улучшению условий труда ООО Амбреллио.pdf
+            br
+            br
+            a.safety(href="results.pdf" target="_blank")
+              img.icon_svg(src="../images/icons/pdf.svg" alt="")
+              | Сводная ведомость результатов проведения специальной оценки условий труда ООО Амбреллио.pdf
+
+    include include/footer

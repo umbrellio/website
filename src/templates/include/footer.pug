@@ -7,7 +7,7 @@ footer(class=(map == 'large' ? 'fixed-bottom' : ''))
     a(href="https://www.instagram.com/umbrellio_biz" target="_blank"): span.fa.fa-instagram
   .inner: .row
     .col-6
-      p.phone: a(href="tel:+78126485327") 8 (812) 648-53-27
+      p.phone: a(href="tel:+78125076908") 8 (812) 507-69-08
       p.email
         a(href="mailto:info@umbrellio.biz") info@umbrellio.biz
         br
@@ -17,10 +17,14 @@ footer(class=(map == 'large' ? 'fixed-bottom' : ''))
         span(itemprop="name") #{_t('organization_name')}
         div(itemprop="address" itemscope itemtype="http://schema.org/PostalAddress")
           | #{_t('organization_address')}
-        span.schema-fade(itemprop="telephone") +7 812 648-53-27
+        span.schema-fade(itemprop="telephone") +7 812 507-69-08
         span.schema-fade(itemprop="email") info@umbrellio.biz
 
-      p #{_t('copyright_notice')}
+      p
+        | #{_t('copyright_notice')}
+        if lang === 'ru'
+          | &nbsp;•&nbsp;
+          a.safety(href=`/${lang}/safety`) #{_t('working_conditions')}
 
       p.contacts #{_t('requisites')}
 

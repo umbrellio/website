@@ -162,3 +162,19 @@ a {
 .right {
   float: right;
 }
+
+.safety {
+  &,
+  &:link,
+  &:visited,
+  &:hover {
+    color: #7f858f;
+  }
+  img {
+    max-width: 25px;
+    max-height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+}
